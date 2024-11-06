@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .navbar-btn {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .navbar-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+    }
+  
+    .navbar-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .navbar-btn {
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .navbar-menu.active .navbar-links {
+      display: flex;
+    }
+  
+    .navbar-menu.active .navbar-btn {
+      display: block;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

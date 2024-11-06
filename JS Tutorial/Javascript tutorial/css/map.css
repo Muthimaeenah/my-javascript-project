@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    margin-top: 2rem;
+}
+
+.item {
+    border: 2px solid grey;
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+h4 {
+    padding-top: .5rem;
+}

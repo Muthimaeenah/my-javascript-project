@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP verification</title>
+    <link rel="stylesheet" href="./otp.css">
+</head>
+<body>
+    <div class="container step1">
+        <h2 class="title">OTP verification</h2><br>
+        <h4 class="subtitle">Enter your email address</h4><br>
+        <p>you will receive an email with a one-time password</p>
+
+        <div class="form">
+            <input type="email" name="email" id="email" placeholder="Email Address" onkeyup="validateEmail(this.value)"><br>
+            <button class="nextbtn">Next &rarr;</button>
+        </div>
+    </div>    
+
+    <div class="container  step2">
+        <h2 class="title">OTP verification</h2><br>
+        <h4>Enter one-time password </h4><br>
+        <p>A one-time password has been sent to <span id="verifyEmail"></span></p>
+
+        <div class="otp_form">
+            <p>Enter the 4 digit code send to you via email to continue</p> <br>
+            <div class="otp_group">
+                <input type="number"  id="">
+                <input type="number"  id="">
+                <input type="number"  id="">
+                <input type="number"  id="">
+            </div>
+            <p>Not your email? / Didn't receive the code  <br>
+                <a href="javascript:void(0)" onclick="changeMyEmail()">Try Again</a>
+            </p>
+            <button class="verifyBtn">Verify &rarr;</button>
+        </div>
+    </div>    
+
+    <div class="container step3">
+        <h2 class="title">Congratulation</h2><br>
+        <p>Welcome to Home page</p>
+        <img src="" alt="image">
+        <h2>Thank you</h2><br>
+        <p>your OTP Verification has been completed successfully</p>
+    </div>    
+    <script src="./otp.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+</body>
+</html>
